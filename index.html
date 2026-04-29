@@ -1,0 +1,1720 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success By Default | Client Success Systems for Coaching Businesses</title>
+    <meta name="description" content="Kairos™ is the ultimate client success system for established coaching businesses. Increase revenue per client, cut churn, and scale with the clients you already have.">
+    <meta name="author" content="Alex Kerr">
+
+    <!-- Open Graph (Facebook, LinkedIn, iMessage previews) -->
+    <meta property="og:title" content="Success By Default | Scale With The Clients You Already Have">
+    <meta property="og:description" content="The ultimate client success system for established coaching businesses. Increase revenue per client, cut churn, and build real backend revenue.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://successbydefault.systems">
+    <meta property="og:image" content="https://successbydefault.systems/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Success By Default | Scale With The Clients You Already Have">
+    <meta name="twitter:description" content="The ultimate client success system for established coaching businesses.">
+    <meta name="twitter:image" content="https://successbydefault.systems/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Self-hosted fonts (Inter + Manrope) -->
+    <link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/fonts/manrope-300-latin.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="stylesheet" href="/fonts.css">
+
+    <!-- Compiled Tailwind CSS -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1285588733069168');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1285588733069168&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #0A0A0A; }
+      .font-manrope { font-family: 'Manrope', sans-serif; }
+      .font-inter { font-family: 'Inter', sans-serif; }
+
+      html { scroll-behavior: smooth; }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #0A0A0A; }
+      ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+      iconify-icon { display: inline-block; vertical-align: middle; }
+
+      @keyframes animationIn {
+          0% { opacity: 0; transform: translateY(30px); filter: blur(8px); }
+          100% { opacity: 1; transform: translateY(0); filter: blur(0px); }
+      }
+
+      @keyframes subtleGlow {
+          0% { text-shadow: 0 0 2px #fff, 0 0 6px #4A7CFF, 0 0 12px #4A7CFF, 0 0 20px #4A7CFF; }
+          100% { text-shadow: 0 0 4px #fff, 0 0 8px #4A7CFF, 0 0 16px #4A7CFF, 0 0 28px #4A7CFF; }
+      }
+
+      .animate-on-scroll { animation-play-state: paused !important; }
+      .animate-on-scroll.animate { animation-play-state: running !important; }
+
+      .north-star-orb {
+          position: relative; border-radius: 50%;
+          background: radial-gradient(circle at center, #ffffff 0%, #bfdbfe 15%, #3b82f6 40%, #1e3a8a 100%);
+          box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.8), 0 0 16px 4px rgba(96, 165, 250, 0.8), 0 0 32px 10px rgba(59, 130, 246, 0.6), 0 0 48px 16px rgba(29, 78, 216, 0.4);
+          z-index: 10; animation: star-pulse 3s ease-in-out infinite alternate;
+      }
+      @keyframes star-pulse {
+          0% { transform: scale(0.95); opacity: 0.85; filter: brightness(0.9); }
+          100% { transform: scale(1.05); opacity: 1; filter: brightness(1.2); }
+      }
+      .north-star-orb::before, .north-star-orb::after {
+          content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+          pointer-events: none; z-index: -1; transition: all 0.5s ease-out; border-radius: 100%;
+      }
+      .north-star-orb::before {
+          width: 250%; height: 1.5px;
+          background: linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.6) 30%, #ffffff 50%, rgba(59, 130, 246, 0.6) 70%, transparent 100%);
+          box-shadow: 0 0 12px 2px rgba(59, 130, 246, 0.8);
+      }
+      .north-star-orb::after {
+          width: 1.5px; height: 250%;
+          background: linear-gradient(180deg, transparent 0%, rgba(59, 130, 246, 0.6) 30%, #ffffff 50%, rgba(59, 130, 246, 0.6) 70%, transparent 100%);
+          box-shadow: 0 0 12px 2px rgba(59, 130, 246, 0.8);
+      }
+      .group:hover .nav-star-orb {
+          background: radial-gradient(circle at center, #ffffff 0%, #dbeafe 20%, #60a5fa 50%, #2563eb 100%);
+          box-shadow: 0 0 12px 2px #ffffff, 0 0 24px 8px rgba(96, 165, 250, 0.9), 0 0 48px 16px rgba(59, 130, 246, 0.7), 0 0 64px 24px rgba(29, 78, 216, 0.5);
+          transform: scale(1.2); animation: none;
+      }
+      .group:hover .nav-star-orb::before {
+          width: 300%; height: 2px;
+          background: linear-gradient(90deg, transparent 0%, rgba(96, 165, 250, 0.8) 35%, #ffffff 50%, rgba(96, 165, 250, 0.8) 65%, transparent 100%);
+          box-shadow: 0 0 16px 4px rgba(96, 165, 250, 0.9);
+      }
+      .group:hover .nav-star-orb::after {
+          height: 300%; width: 2px;
+          background: linear-gradient(180deg, transparent 0%, rgba(96, 165, 250, 0.8) 35%, #ffffff 50%, rgba(96, 165, 250, 0.8) 65%, transparent 100%);
+          box-shadow: 0 0 16px 4px rgba(96, 165, 250, 0.9);
+      }
+
+      @keyframes stair-fill {
+          0%, 100% { opacity: 0; width: 0%; box-shadow: none; }
+          10%, 80% { opacity: 1; width: var(--target-w); box-shadow: 0 0 15px rgba(16, 185, 129, 0.4); }
+          90% { opacity: 0; width: var(--target-w); }
+      }
+      @keyframes stair-label {
+          0%, 100% { opacity: 0; transform: translateX(-10px); }
+          10%, 80% { opacity: 1; transform: translateX(0); }
+          90% { opacity: 0; }
+      }
+      @keyframes radar-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes radar-dot {
+          0%, 100% { opacity: 0.3; transform: scale(1); box-shadow: none; }
+          2% { opacity: 1; transform: scale(1.5); box-shadow: 0 0 10px currentColor; }
+          15% { opacity: 0.3; transform: scale(1); box-shadow: none; }
+      }
+      @keyframes radar-red-to-amber {
+          0%, 100% { background-color: #EF4444; opacity: 0.4; transform: scale(1); box-shadow: none; }
+          2% { background-color: #EF4444; opacity: 1; transform: scale(1.6); box-shadow: 0 0 15px #EF4444; }
+          8% { background-color: #F59E0B; opacity: 1; box-shadow: 0 0 10px #F59E0B; }
+          15% { background-color: #F59E0B; opacity: 0.4; transform: scale(1); box-shadow: none; }
+      }
+      @keyframes flow-particle { 0% { stroke-dashoffset: 120; opacity: 0; } 10% { opacity: 1; } 70% { opacity: 1; stroke-dashoffset: 0; } 80%, 100% { opacity: 0; stroke-dashoffset: 0; } }
+      @keyframes blue-pulse {
+          0%, 100% { transform: translate(-50%, -50%) scale(1); box-shadow: 0 0 15px rgba(96, 165, 250, 0.2); }
+          10%, 20% { transform: translate(-50%, -50%) scale(1.25); box-shadow: 0 0 30px rgba(96, 165, 250, 0.8); }
+      }
+      @keyframes label-fade { 0%, 100% { opacity: 0.2; } 10%, 70% { opacity: 1; text-shadow: 0 0 10px rgba(96, 165, 250, 0.4); } }
+      @keyframes breath-glow {
+          0%, 100% { transform: scale(1); box-shadow: 0 0 15px rgba(168,85,247,0.3); border-color: rgba(168,85,247,0.4); }
+          50% { transform: scale(1.05); box-shadow: 0 0 25px rgba(168,85,247,0.6); border-color: rgba(192,132,252,0.7); }
+      }
+      @keyframes pink-path-1 { 0% { stroke-dashoffset: 30; opacity: 1;} 20%, 80% { stroke-dashoffset: 0; opacity: 1; } 100% { opacity: 0; stroke-dashoffset: 0; } }
+      @keyframes pink-path-2 { 0%, 20% { stroke-dashoffset: 40; opacity: 1;} 40%, 80% { stroke-dashoffset: 0; opacity: 1; } 100% { opacity: 0; stroke-dashoffset: 0; } }
+      @keyframes pink-node-1 { 0%, 100% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; box-shadow: none; } 10%, 80% { transform: translate(-50%, -50%) scale(1); opacity: 1; box-shadow: 0 0 15px rgba(244, 114, 182, 0.4); } }
+      @keyframes pink-node-2 { 0%, 20% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; box-shadow: none; } 30%, 80% { transform: translate(-50%, -50%) scale(1); opacity: 1; box-shadow: 0 0 20px rgba(244, 114, 182, 0.6); } 100% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; } }
+      @keyframes pink-node-3 { 0%, 40% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; box-shadow: none; } 50%, 80% { transform: translate(-50%, -50%) scale(1); opacity: 1; box-shadow: 0 0 25px rgba(244, 114, 182, 0.8); } 100% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; } }
+      @keyframes sky-scan-line { 0% { transform: translateX(0); opacity: 0; } 10%, 90% { opacity: 1; } 100% { transform: translateX(100%); opacity: 0; } }
+
+      @keyframes dot-flare {
+          0%, 100% { transform: scale(1); filter: brightness(1); }
+          5% { transform: scale(1.5); filter: brightness(1.5); box-shadow: 0 0 12px currentColor; }
+          15% { transform: scale(1); filter: brightness(1); box-shadow: none; }
+      }
+      @keyframes status-ring-flare {
+          0%, 100% { transform: scale(0.5); opacity: 0; border-width: 2px; }
+          5% { transform: scale(1.5); opacity: 1; border-width: 1.5px; }
+          20% { transform: scale(3); opacity: 0; border-width: 0px; }
+      }
+      @keyframes pulse-slow { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.8; } }
+      @keyframes pulse-med { 0%, 100% { opacity: 0.3; } 50% { opacity: 0.9; } }
+      @keyframes pulse-fast { 0%, 100% { opacity: 0.2; } 50% { opacity: 1; } }
+      @keyframes pulse-calm { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.7; } }
+
+      .system-in-view .animate-sys { animation-play-state: running; }
+    </style>
+
+    
+    <script>
+      (function () {
+          const once = true;
+          if (!window.__inViewIO) {
+              window.__inViewIO = new IntersectionObserver((entries) => {
+                  entries.forEach((entry) => {
+                      if (entry.isIntersecting) {
+                          entry.target.classList.add("animate");
+                          if (once) window.__inViewIO.unobserve(entry.target);
+                      }
+                  });
+              }, { threshold: 0.2, rootMargin: "0px 0px -10% 0px" });
+          }
+          window.initInViewAnimations = function (selector = ".animate-on-scroll") {
+              document.querySelectorAll(selector).forEach((el) => {
+                  window.__inViewIO.observe(el);
+              });
+          };
+          document.addEventListener("DOMContentLoaded", () => initInViewAnimations());
+      })();
+    </script>
+    <script>
+      (function initCarousel() {
+          const setup = () => {
+              const panels = document.querySelectorAll('.showcase-panel');
+              const tabs = document.querySelectorAll('.showcase-tab');
+              const dots = document.querySelectorAll('.showcase-dot');
+              const roleLabel = document.getElementById('showcase-role');
+              const container = document.getElementById('kairos-showcase');
+
+              if(!panels.length) {
+                  setTimeout(setup, 100);
+                  return;
+              }
+
+              let currentIndex = 0;
+              let interval;
+
+              function showPanel(index) {
+                  panels.forEach((p, i) => {
+                      if (i === index) {
+                          p.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none', 'z-0');
+                          p.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto', 'z-10');
+                      } else {
+                          p.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none', 'z-0');
+                          p.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto', 'z-10');
+                      }
+                  });
+
+                  tabs.forEach((t, i) => {
+                      if (i === index) {
+                          t.className = 'showcase-tab active px-3 lg:px-5 py-1.5 rounded-full text-xs uppercase tracking-[0.15em] font-normal transition-all bg-white/10 text-white shadow-sm';
+                      } else {
+                          t.className = 'showcase-tab px-3 lg:px-5 py-1.5 rounded-full text-xs uppercase tracking-[0.15em] font-normal transition-all text-white/40 hover:text-white/80';
+                      }
+                  });
+
+                  dots.forEach((d, i) => {
+                      if (i === index) {
+                          d.className = 'showcase-dot w-2 h-2 rounded-full bg-white transition-all shadow-[0_0_8px_rgba(255,255,255,0.8)] pointer-events-auto cursor-pointer';
+                      } else {
+                          d.className = 'showcase-dot w-2 h-2 rounded-full bg-white/20 transition-all pointer-events-auto cursor-pointer hover:bg-white/40';
+                      }
+                  });
+
+                  if(roleLabel) {
+                      roleLabel.textContent = panels[index].getAttribute('data-role');
+                  }
+
+                  currentIndex = index;
+              }
+
+              function nextPanel() {
+                  showPanel((currentIndex + 1) % panels.length);
+              }
+
+              function startInterval() {
+                  clearInterval(interval);
+                  interval = setInterval(nextPanel, 7000);
+              }
+
+              tabs.forEach((tab, i) => {
+                  tab.addEventListener('click', () => { showPanel(i); startInterval(); });
+              });
+
+              dots.forEach((dot, i) => {
+                  dot.addEventListener('click', () => { showPanel(i); startInterval(); });
+              });
+
+              if(container) {
+                  container.addEventListener('mouseenter', () => clearInterval(interval));
+                  container.addEventListener('mouseleave', startInterval);
+              }
+
+              startInterval();
+          };
+
+          if(document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', setup);
+          } else {
+              setup();
+          }
+      })();
+    </script>
+  </head>
+  <body class="antialiased overflow-x-hidden min-h-screen text-neutral-400 bg-[#0A0A0A] relative selection:bg-[#4A7CFF]/30 selection:text-white font-inter">
+    <!-- HERO SECTION -->
+    <div class="flex flex-col overflow-hidden min-h-screen w-full relative">
+      <div class="z-0 w-full h-full absolute top-0 left-0 pointer-events-none opacity-80">
+        <div data-us-project="U7tLRvdF7ikcfxcCHs65" class="absolute w-full h-full left-0 top-0 z-0"></div>
+        <script type="text/javascript">
+          !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.1.0-1/dist/unicornStudio.umd.js";i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init();window.UnicornStudio.isInitialized=!0})}else{UnicornStudio.init();window.UnicornStudio.isInitialized=!0}};(document.head||document.body).appendChild(i)}else if(!window.UnicornStudio.isInitialized&&window.UnicornStudio.init){UnicornStudio.init();window.UnicornStudio.isInitialized=!0}}();
+        </script>
+      </div>
+      <div class="absolute inset-0 bg-[#0A0A0A]/50 z-[1] pointer-events-none"></div>
+
+      <nav class="flex [animation:animationIn_0.8s_ease-out_0.1s_both] z-50 w-full max-w-7xl mx-auto pt-8 px-6 pb-4 relative items-center justify-between">
+        <div class="flex-1">
+          <a href="#" class="inline-flex items-center gap-4 cursor-pointer group">
+            <div class="relative w-8 h-8 flex items-center justify-center transition-transform duration-500 ease-out group-hover:scale-110">
+              <div class="w-2 h-2 north-star-orb nav-star-orb transition-all duration-500"></div>
+            </div>
+            <span class="font-manrope font-light text-lg tracking-[0.15em] text-white">
+              Success By Default
+            </span>
+          </a>
+        </div>
+
+        <div class="hidden md:flex items-center gap-8 px-10 py-3 rounded-full border border-white/10 bg-black/70 shadow-2xl shadow-black backdrop-blur-xl">
+          <a href="#system" class="text-xs uppercase tracking-widest text-white hover:text-white/60 transition-colors font-medium">
+            System
+          </a>
+          <a href="#proof" class="text-xs uppercase tracking-widest text-white hover:text-white/60 transition-colors font-medium">
+            Results
+          </a>
+          <a href="#method" class="text-xs uppercase tracking-widest text-white hover:text-white/60 transition-colors font-medium">
+            Method
+          </a>
+          <a href="#about" class="text-xs uppercase tracking-widest text-white hover:text-white/60 transition-colors font-medium">
+            About
+          </a>
+        </div>
+
+        <div class="flex-1 flex justify-end">
+          <div class="relative group">
+            <div class="absolute -inset-0.5 bg-[#4A7CFF] rounded-full blur-md opacity-40 group-hover:opacity-75 transition duration-500"></div>
+            <a href="https://successbydefault.typeform.com/to/rfyKaQod" target="_blank" class="relative flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#0A0A0A] border border-[#4A7CFF]/30 text-white text-xs font-medium uppercase tracking-widest hover:scale-[1.02] transition-transform duration-300">
+              Get a Demo
+              <iconify-icon icon="solar:arrow-right-linear" stroke-width="1.5" class="text-[#4A7CFF]"></iconify-icon>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex flex-col flex-1 z-10 text-center w-full max-w-5xl mx-auto px-6 items-center justify-center pt-10 pb-20">
+        <h1 class="text-5xl md:text-7xl lg:text-[100px] leading-[0.95] [animation:animationIn_0.8s_ease-out_0.2s_both] font-light text-white tracking-tight font-manrope mb-8">
+          Scale with the clients
+          <br>
+          you already have
+        </h1>
+        <p class="text-base md:text-lg [animation:animationIn_0.8s_ease-out_0.3s_both] font-normal text-white/90 max-w-2xl mx-auto mb-16 tracking-wide font-inter">
+          Automated client success and profitable growth system for established
+          coaching businesses.
+        </p>
+        <div class="[animation:animationIn_0.8s_ease-out_0.4s_both]">
+          <a href="#proof" class="relative inline-block group cursor-pointer">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#4A7CFF]/40 via-[#4A7CFF]/30 to-[#4A7CFF]/40 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative flex items-center justify-center px-12 py-5 rounded-full bg-gradient-to-b from-white/20 to-white/5 backdrop-blur-xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.7),inset_0_2px_2px_rgba(255,255,255,0.6),inset_0_-4px_8px_rgba(0,0,0,0.3),inset_0_0_20px_rgba(255,255,255,0.05)] border border-white/10 transition-transform group-hover:scale-[1.02]">
+              <span class="text-lg font-medium tracking-[0.15em] bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70 tracking-tight">
+                VIEW CASE STUDIES →
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 01: THE SYSTEM -->
+    <section class="w-full z-10 border-white/5 border-t pt-32 relative" id="system">
+      <div class="max-w-7xl mx-auto px-6 relative">
+
+        <!-- Section Header -->
+        <div class="mb-20">
+          <h2 class="text-5xl md:text-6xl lg:text-7xl font-manrope font-extralight tracking-tight text-white">
+            Kairos™
+          </h2>
+          <p class="text-2xl md:text-3xl lg:text-4xl font-manrope font-thin tracking-tight text-white mt-4" style="animation: subtleGlow 3s ease-in-out infinite alternate;">
+            The Ultimate Client Success System
+          </p>
+        </div>
+
+        <!-- Six Pillars -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-20 mb-32">
+          <div>
+            <span class="text-base font-manrope font-light text-[#4A7CFF]/70 block mb-4">1</span>
+            <h3 class="text-xl md:text-2xl font-manrope font-normal text-white tracking-tight mb-3">Increase revenue per client</h3>
+            <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-sm">Get more of your clients to the result they paid for, then stack renewals, upgrades, and backend offers on top of that success.</p>
+          </div>
+          <div>
+            <span class="text-base font-manrope font-light text-[#4A7CFF]/70 block mb-4">2</span>
+            <h3 class="text-xl md:text-2xl font-manrope font-normal text-white tracking-tight mb-3">Cut churn and refunds before they happen</h3>
+            <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-sm">Detect stalled progress and disengagement early and trigger the right intervention, so clients stay, finish, and rave instead of canceling or charging back.</p>
+          </div>
+          <div>
+            <span class="text-base font-manrope font-light text-[#4A7CFF]/70 block mb-4">3</span>
+            <h3 class="text-xl md:text-2xl font-manrope font-normal text-white tracking-tight mb-3">Acquire better clients from every channel</h3>
+            <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-sm">Train ads, content, setters, and closers on real high-value client data so you attract more people who look like your best buyers, not just any buyers.</p>
+          </div>
+          <div>
+            <span class="text-base font-manrope font-light text-[#4A7CFF]/70 block mb-4">4</span>
+            <h3 class="text-xl md:text-2xl font-manrope font-normal text-white tracking-tight mb-3">Scale your client capacity without hiring</h3>
+            <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-sm">Give each role a single, prioritized queue of actions so more clients are supported, better, without adding headcount or more meetings.</p>
+          </div>
+          <div>
+            <span class="text-base font-manrope font-light text-[#4A7CFF]/70 block mb-4">5</span>
+            <h3 class="text-xl md:text-2xl font-manrope font-normal text-white tracking-tight mb-3">Turn client wins into compounding growth assets</h3>
+            <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-sm">As more clients hit real wins, those moments automatically become referrals, case studies, and testimonials that keep driving growth.</p>
+          </div>
+          <div>
+            <span class="text-base font-manrope font-light text-[#4A7CFF]/70 block mb-4">6</span>
+            <h3 class="text-xl md:text-2xl font-manrope font-normal text-white tracking-tight mb-3">See the true health and value of every client</h3>
+            <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-sm">Know instantly who's thriving, who's stuck, and who's at risk so your attention and coaching go where they have the highest payoff.</p>
+          </div>
+        </div>
+
+        <!-- UI Placeholder -->
+        <div class="[animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll bg-gradient-to-b from-[#111] to-[#050505] w-full max-w-6xl border-white/10 border rounded-[2rem] lg:rounded-[2.5rem] p-2 lg:p-3 mx-auto relative shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)]" id="kairos-showcase">
+          <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-70"></div>
+          <div class="bg-[#0A0A0A] w-full h-[500px] lg:h-[720px] rounded-[1.5rem] lg:rounded-[2rem] ring-1 ring-white/5 shadow-[inset_0_2px_8px_rgba(0,0,0,0.8)] relative overflow-hidden flex flex-col group">
+            
+            <!-- Global Nav Bar -->
+            <div class="backdrop-blur-[16px] border-white/[0.05] z-30 flex h-14 lg:h-16 border-b px-4 lg:px-6 absolute top-0 right-0 left-0 items-center justify-between">
+              <div class="flex items-center gap-2 lg:gap-3">
+                <div class="w-7 h-7 lg:w-8 lg:h-8 rounded-lg bg-gradient-to-br from-white/10 to-white/5 border border-white/20 flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+                  <span class="font-normal text-white text-xs lg:text-sm">
+                    K
+                  </span>
+                </div>
+                <span class="font-extralight tracking-widest text-white text-xs lg:text-sm uppercase hidden sm:block">
+                  Kairos™
+                </span>
+              </div>
+      
+              <div class="flex items-center gap-1 lg:gap-2 p-1 bg-black/40 rounded-full border border-white/5 overflow-x-auto" style="scrollbar-width: none;">
+                <button class="showcase-tab active px-3 lg:px-5 py-1.5 rounded-full text-xs uppercase tracking-[0.15em] font-normal transition-all bg-white/10 text-white shadow-sm whitespace-nowrap" data-target="0">
+                  Dashboard
+                </button>
+                <button class="showcase-tab px-3 lg:px-5 py-1.5 rounded-full text-xs uppercase tracking-[0.15em] font-normal transition-all text-white/40 hover:text-white/80 whitespace-nowrap" data-target="1">
+                  Today
+                </button>
+                <button class="showcase-tab px-3 lg:px-5 py-1.5 rounded-full text-xs uppercase tracking-[0.15em] font-normal transition-all text-white/40 hover:text-white/80 whitespace-nowrap" data-target="2">
+                  Pipeline
+                </button>
+              </div>
+      
+              <div class="hidden lg:flex items-center gap-3">
+                <div class="hidden lg:flex flex-col items-end">
+                  <span class="text-xs uppercase tracking-widest text-white/40" style="font-family: 'JetBrains Mono', monospace;">
+                    Role
+                  </span>
+                  <span id="showcase-role" class="text-xs text-white font-normal tracking-wide">
+                    CEO View
+                  </span>
+                </div>
+                <div class="w-7 h-7 lg:w-8 lg:h-8 rounded-full bg-gradient-to-br from-[#4A7CFF] to-purple-600 p-[1px]">
+                  <div class="w-full h-full rounded-full bg-[#0A0A0A] flex items-center justify-center">
+                    <iconify-icon icon="solar:user-linear" class="text-white/70 text-xs lg:text-sm"></iconify-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Carousel Panels -->
+            <div class="relative flex-1 mt-14 lg:mt-16">
+              
+              <!-- Panel 1: Dashboard -->
+              <div class="showcase-panel absolute inset-0 transition-all duration-700 ease-in-out opacity-100 translate-y-0 z-10 pointer-events-auto flex flex-col px-5 py-6 pb-24 lg:p-10 lg:pb-24 overflow-y-auto" data-index="0" data-role="CEO View" style="scrollbar-width: none;">
+                <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                  <div class="absolute top-0 right-0 w-64 lg:w-96 h-64 lg:h-96 bg-red-500/10 rounded-full blur-[80px] lg:blur-[120px]"></div>
+                  <div class="absolute bottom-0 left-0 w-64 lg:w-96 h-64 lg:h-96 bg-emerald-500/10 rounded-full blur-[80px] lg:blur-[120px]"></div>
+                </div>
+      
+                <div class="relative z-10 h-max lg:h-full flex flex-col gap-6 lg:gap-5">
+                  <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-4 lg:gap-0">
+                    <div>
+                      <h2 class="text-2xl lg:text-4xl font-extralight text-white tracking-tight leading-none mb-2 lg:mb-3">
+                        Good morning.
+                      </h2>
+                      <p class="text-xs text-white/40 uppercase tracking-widest" style="font-family: 'JetBrains Mono', monospace;">
+                        Tuesday, Oct 24
+                      </p>
+                    </div>
+                    <div class="px-4 py-2 lg:py-2.5 rounded-full border border-amber-500/30 bg-amber-500/10 flex items-center gap-2 lg:gap-2.5 shadow-[0_0_15px_rgba(245,158,11,0.1)] w-fit">
+                      <div class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></div>
+                      <span class="text-xs font-normal uppercase tracking-widest text-amber-400">
+                        1 item needs attention
+                      </span>
+                    </div>
+                  </div>
+      
+                  <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4">
+                    <div class="p-4 lg:p-5 rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.01] backdrop-blur-[20px] border border-white/[0.08] shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_20px_40px_-10px_rgba(0,0,0,0.5)]">
+                      <span class="text-xs uppercase tracking-widest text-white/40 font-normal block mb-3 lg:mb-4">
+                        Active Clients
+                      </span>
+                      <div class="flex items-end gap-2 lg:gap-3">
+                        <span class="text-2xl lg:text-4xl font-extralight text-white tracking-tight leading-none">
+                          47
+                        </span>
+                        <span class="text-xs text-emerald-400 mb-[2px] bg-emerald-400/10 px-1.5 py-0.5 rounded flex items-center gap-1" style="font-family: 'JetBrains Mono', monospace;">
+                          <iconify-icon icon="solar:graph-up-linear"></iconify-icon>
+                          2
+                        </span>
+                      </div>
+                    </div>
+                    <div class="p-4 lg:p-5 rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.01] backdrop-blur-[20px] border border-white/[0.08] shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_20px_40px_-10px_rgba(0,0,0,0.5)]">
+                      <span class="text-xs uppercase tracking-widest text-white/40 font-normal block mb-3 lg:mb-4">
+                        Rev This Month
+                      </span>
+                      <div class="flex items-end gap-2 lg:gap-3">
+                        <span class="text-2xl lg:text-4xl font-extralight text-white tracking-tight leading-none">
+                          $86.4k
+                        </span>
+                        <span class="text-xs text-emerald-400 mb-[2px] bg-emerald-400/10 px-1.5 py-0.5 rounded flex items-center gap-1" style="font-family: 'JetBrains Mono', monospace;">
+                          <iconify-icon icon="solar:graph-up-linear"></iconify-icon>
+                          12%
+                        </span>
+                      </div>
+                    </div>
+                    <div class="p-4 lg:p-5 rounded-2xl bg-[radial-gradient(ellipse_at_top_right,rgba(239,68,68,0.15),transparent_70%)] backdrop-blur-[20px] border border-red-500/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_20px_40px_-10px_rgba(0,0,0,0.5)]">
+                      <span class="text-xs uppercase tracking-widest text-red-400/80 font-normal block mb-3 lg:mb-4">
+                        Revenue at Risk
+                      </span>
+                      <div class="flex items-end gap-2 lg:gap-3 flex-wrap sm:flex-nowrap">
+                        <span class="text-2xl lg:text-4xl font-extralight text-red-100 tracking-tight leading-none">
+                          $8.4k
+                        </span>
+                        <span class="text-xs text-red-400 mb-[2px] bg-red-500/10 px-1.5 py-0.5 rounded whitespace-nowrap" style="font-family: 'JetBrains Mono', monospace;">
+                          1 Client
+                        </span>
+                      </div>
+                    </div>
+                    <div class="p-4 lg:p-5 rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.01] backdrop-blur-[20px] border border-white/[0.08] shadow-[inset_0_1px_0_rgba(255,255,255,0.1),0_20px_40px_-10px_rgba(0,0,0,0.5)]">
+                      <span class="text-xs uppercase tracking-widest text-white/40 font-normal block mb-3 lg:mb-4">
+                        Avg HVC Score
+                      </span>
+                      <div class="flex items-end gap-2 lg:gap-3">
+                        <span class="text-2xl lg:text-4xl font-extralight text-white tracking-tight leading-none">
+                          6.8
+                        </span>
+                        <span class="text-xs text-emerald-400 mb-[2px] bg-emerald-400/10 px-1.5 py-0.5 rounded flex items-center gap-1" style="font-family: 'JetBrains Mono', monospace;">
+                          <iconify-icon icon="solar:graph-up-linear"></iconify-icon>
+                          0.3
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="lg:col-span-2 p-5 lg:p-8 rounded-3xl bg-gradient-to-br from-white/[0.05] to-white/[0.01] backdrop-blur-[20px] border border-white/[0.08] shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] flex flex-col justify-between gap-6 lg:gap-0">
+                      <div class="flex items-center justify-between">
+                        <span class="text-xs uppercase tracking-widest text-white/60 font-normal">
+                          Client Health Distribution
+                        </span>
+                        <iconify-icon icon="solar:chart-square-linear" class="text-white/30 text-lg"></iconify-icon>
+                      </div>
+                      <div class="w-full h-8 lg:h-10 rounded-full overflow-hidden flex shadow-[inset_0_2px_10px_rgba(0,0,0,0.5)] bg-black/50 border border-white/5 relative">
+                        <div class="h-full bg-gradient-to-r from-blue-600 to-blue-400 relative border-r border-black/50" style="width: 5%">
+                          <div class="absolute inset-0 bg-white/20 blur-[2px]"></div>
+                        </div>
+                        <div class="h-full bg-gradient-to-r from-emerald-600 to-emerald-400 relative border-r border-black/50" style="width: 75%">
+                          <div class="absolute inset-0 bg-white/20 blur-[2px]"></div>
+                        </div>
+                        <div class="h-full bg-gradient-to-r from-amber-600 to-amber-400 relative border-r border-black/50" style="width: 15%">
+                          <div class="absolute inset-0 bg-white/20 blur-[2px]"></div>
+                        </div>
+                        <div class="h-full bg-gradient-to-r from-red-600 to-red-500 relative" style="width: 5%">
+                          <div class="absolute inset-0 bg-white/20 blur-[2px]"></div>
+                        </div>
+                      </div>
+                      <div class="flex flex-wrap lg:flex-nowrap justify-between items-center gap-3 lg:gap-0 px-1 lg:px-4">
+                        <div class="flex items-center gap-2">
+                          <div class="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.6)]"></div>
+                          <span class="text-xs text-white/60 uppercase tracking-widest" style="font-family: 'JetBrains Mono', monospace;">
+                            New (1)
+                          </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <div class="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.6)]"></div>
+                          <span class="text-xs text-white/60 uppercase tracking-widest" style="font-family: 'JetBrains Mono', monospace;">
+                            Healthy (38)
+                          </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <div class="w-2 h-2 rounded-full bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.6)]"></div>
+                          <span class="text-xs text-white/60 uppercase tracking-widest" style="font-family: 'JetBrains Mono', monospace;">
+                            At Risk (7)
+                          </span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <div class="w-2 h-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.6)]"></div>
+                          <span class="text-xs text-white/60 uppercase tracking-widest" style="font-family: 'JetBrains Mono', monospace;">
+                            Critical (1)
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <div class="lg:col-span-1 flex flex-col sm:flex-row lg:flex-col gap-4">
+                      <div class="flex-1 p-5 lg:p-6 rounded-2xl bg-gradient-to-br from-emerald-500/10 to-transparent backdrop-blur-[20px] border border-emerald-500/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] flex flex-col justify-between relative overflow-hidden group/card cursor-default min-h-[140px]">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-emerald-500/20 blur-2xl rounded-full transition-transform duration-700 group-hover/card:scale-150"></div>
+                        <div class="relative z-10">
+                          <span class="text-xs uppercase tracking-widest text-emerald-400 font-normal block mb-2">
+                            Ready for Renewal
+                          </span>
+                          <div class="flex items-baseline gap-2">
+                            <span class="text-2xl lg:text-3xl font-extralight text-emerald-50 tracking-tight">
+                              12
+                            </span>
+                            <span class="text-xs text-emerald-400/60" style="font-family: 'JetBrains Mono', monospace;">
+                              Clients
+                            </span>
+                          </div>
+                        </div>
+                        <div class="relative z-10 flex items-center gap-2 text-xs text-emerald-300/80 bg-emerald-500/10 w-fit px-2.5 py-1.5 rounded-lg border border-emerald-500/20 mt-3 lg:mt-2 whitespace-nowrap" style="font-family: 'JetBrains Mono', monospace;">
+                          <iconify-icon icon="solar:arrow-right-linear" class="text-emerald-400"></iconify-icon>
+                          $36k Potential ARR
+                        </div>
+                      </div>
+      
+                      <div class="flex-1 p-5 lg:p-6 rounded-2xl bg-gradient-to-br from-pink-500/10 to-transparent backdrop-blur-[20px] border border-pink-500/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] flex flex-col justify-between relative overflow-hidden group/card cursor-default min-h-[140px]">
+                        <div class="absolute -right-4 -bottom-4 w-24 h-24 bg-pink-500/20 blur-2xl rounded-full transition-transform duration-700 group-hover/card:scale-150"></div>
+                        <div class="relative z-10">
+                          <span class="text-xs uppercase tracking-widest text-pink-400 font-normal block mb-2">
+                            New Wins / Assets
+                          </span>
+                          <div class="flex items-baseline gap-2">
+                            <span class="text-2xl lg:text-3xl font-extralight text-pink-50 tracking-tight">
+                              3
+                            </span>
+                            <span class="text-xs text-pink-400/60" style="font-family: 'JetBrains Mono', monospace;">
+                              This week
+                            </span>
+                          </div>
+                        </div>
+                        <div class="relative z-10 flex items-center gap-2 text-xs text-pink-300/80 bg-pink-500/10 w-fit px-2.5 py-1.5 rounded-lg border border-pink-500/20 mt-3 lg:mt-2 whitespace-nowrap" style="font-family: 'JetBrains Mono', monospace;">
+                          <iconify-icon icon="solar:arrow-right-linear" class="text-pink-400"></iconify-icon>
+                          Auto-sent to marketing
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Panel 2: Today (CSM View) -->
+              <div class="showcase-panel absolute inset-0 transition-all duration-700 ease-in-out opacity-0 translate-y-4 z-0 pointer-events-none flex flex-col px-5 py-6 pb-24 lg:p-10 lg:pb-24 overflow-y-auto" data-index="1" data-role="CSM View" style="scrollbar-width: none;">
+                <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                  <div class="absolute top-1/2 left-0 w-[300px] lg:w-[400px] h-[300px] lg:h-[400px] bg-purple-500/10 rounded-full blur-[100px] lg:blur-[120px] -translate-y-1/2"></div>
+                </div>
+      
+                <div class="relative z-10 h-max lg:h-full flex flex-col gap-6 lg:gap-8">
+                  <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-4 lg:gap-0">
+                    <div>
+                      <h2 class="text-2xl lg:text-4xl font-extralight text-white tracking-tight leading-none mb-2 lg:mb-3">
+                        Priority Queue
+                      </h2>
+                      <p class="text-xs text-white/40 uppercase tracking-widest" style="font-family: 'JetBrains Mono', monospace;">
+                        Only the actions that matter today
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-2 bg-white/5 border border-white/10 pr-4 rounded-full">
+                      <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
+                        <iconify-icon icon="solar:check-circle-linear" class="text-emerald-400 text-sm"></iconify-icon>
+                      </div>
+                      <span class="text-xs font-normal text-white/60">
+                        3 of 7 completed
+                      </span>
+                    </div>
+                  </div>
+      
+                  <div class="flex-1 flex flex-col gap-3">
+                    <!-- Task 1: Critical -->
+                    <div class="p-4 lg:p-5 rounded-2xl bg-red-500/5 border border-red-500/20 flex flex-col sm:flex-row sm:items-center gap-4 lg:gap-6 group hover:bg-red-500/10 transition-colors cursor-pointer relative overflow-hidden">
+                      <div class="absolute left-0 top-0 bottom-0 w-1 bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.6)]"></div>
+                      <div class="w-10 h-10 rounded-full bg-red-500/10 hidden sm:flex items-center justify-center text-red-400 border border-red-500/20 shrink-0">
+                        <iconify-icon icon="solar:danger-triangle-linear" class="text-lg"></iconify-icon>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="text-sm font-normal text-white mb-1 flex items-center gap-2">
+                          <iconify-icon icon="solar:danger-triangle-linear" class="text-red-400 sm:hidden"></iconify-icon>
+                          Intervention Required: Leroy Jenkins
+                        </h4>
+                        <p class="text-xs text-white/50 leading-relaxed">
+                          Missed 2 consecutive check-ins. Health dropped to Yellow.
+                          <span class="text-white/80 block sm:inline mt-1 sm:mt-0">
+                            Direct text reach out.
+                          </span>
+                        </p>
+                      </div>
+                      <button class="px-4 py-2 w-full sm:w-auto rounded-lg bg-red-500/20 text-red-300 text-xs font-normal hover:bg-red-500/30 transition-colors border border-red-500/20 whitespace-nowrap">
+                        Take Action
+                      </button>
+                    </div>
+      
+                    <!-- Task 2: High Value / Upsell -->
+                    <div class="p-4 lg:p-5 rounded-2xl bg-emerald-500/5 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center gap-4 lg:gap-6 group hover:bg-emerald-500/10 transition-colors cursor-pointer relative overflow-hidden">
+                      <div class="absolute left-0 top-0 bottom-0 w-1 bg-emerald-500"></div>
+                      <div class="w-10 h-10 rounded-full bg-emerald-500/10 hidden sm:flex items-center justify-center text-emerald-400 border border-emerald-500/20 shrink-0">
+                        <iconify-icon icon="solar:round-arrow-up-linear" class="text-lg"></iconify-icon>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="text-sm font-normal text-white mb-1 flex items-center gap-2">
+                          <iconify-icon icon="solar:round-arrow-up-linear" class="text-emerald-400 sm:hidden"></iconify-icon>
+                          Backend Sales Opportunity: Sarah T.
+                        </h4>
+                        <p class="text-xs text-white/50 leading-relaxed">
+                          Hit major milestone (+$10k MRR). Backend Sales Readiness Score: 85%.
+                          <span class="text-white/80 block sm:inline mt-1 sm:mt-0">
+                            Initiate renewal conversation.
+                          </span>
+                        </p>
+                      </div>
+                      <button class="px-4 py-2 w-full sm:w-auto rounded-lg bg-emerald-500/20 text-emerald-300 text-xs font-normal hover:bg-emerald-500/30 transition-colors border border-emerald-500/20 whitespace-nowrap">
+                        Take Action
+                      </button>
+                    </div>
+      
+                    <!-- Task 3: Celebration -->
+                    <div class="p-4 lg:p-5 rounded-2xl bg-pink-500/5 border border-pink-500/20 flex flex-col sm:flex-row sm:items-center gap-4 lg:gap-6 group hover:bg-pink-500/10 transition-colors cursor-pointer relative overflow-hidden">
+                      <div class="absolute left-0 top-0 bottom-0 w-1 bg-pink-500"></div>
+                      <div class="w-10 h-10 rounded-full bg-pink-500/10 hidden sm:flex items-center justify-center text-pink-400 border border-pink-500/20 shrink-0">
+                        <iconify-icon icon="solar:star-linear" class="text-lg"></iconify-icon>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="text-sm font-normal text-white mb-1 flex items-center gap-2">
+                          <iconify-icon icon="solar:star-linear" class="text-pink-400 sm:hidden"></iconify-icon>
+                          Capture Win: David L.
+                        </h4>
+                        <p class="text-xs text-white/50 leading-relaxed">
+                          Posted a win in the community. Testimonial request drafted.
+                          <span class="text-white/80 block sm:inline mt-1 sm:mt-0">
+                            Review and send request.
+                          </span>
+                        </p>
+                      </div>
+                      <button class="px-4 py-2 w-full sm:w-auto rounded-lg bg-pink-500/20 text-pink-300 text-xs font-normal hover:bg-pink-500/30 transition-colors border border-pink-500/20 whitespace-nowrap">
+                        Review Draft
+                      </button>
+                    </div>
+      
+                    <!-- Task 4: Standard Routine -->
+                    <div class="p-4 lg:p-5 rounded-2xl bg-white/5 border border-white/10 flex flex-col sm:flex-row sm:items-center gap-4 lg:gap-6 group hover:bg-white/10 transition-colors cursor-pointer relative overflow-hidden">
+                      <div class="w-10 h-10 rounded-full bg-white/5 hidden sm:flex items-center justify-center text-white/50 border border-white/10 shrink-0">
+                        <iconify-icon icon="solar:chat-round-line-linear" class="text-lg"></iconify-icon>
+                      </div>
+                      <div class="flex-1">
+                        <h4 class="text-sm font-normal text-white/80 mb-1 flex items-center gap-2">
+                          <iconify-icon icon="solar:chat-round-line-linear" class="text-white/50 sm:hidden"></iconify-icon>
+                          Routine Check-in: 4 Clients
+                        </h4>
+                        <p class="text-xs text-white/40">
+                          Standard weekly touchpoints required. Status: Healthy.
+                        </p>
+                      </div>
+                      <button class="px-4 py-2 w-full sm:w-auto rounded-lg bg-white/10 text-white/70 text-xs font-normal hover:bg-white/20 transition-colors border border-white/10 whitespace-nowrap">
+                        Open Batch
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Panel 3: Pipeline (CEO View) -->
+              <div class="showcase-panel absolute inset-0 transition-all duration-700 ease-in-out opacity-0 translate-y-4 z-0 pointer-events-none flex flex-col px-5 py-6 pb-24 lg:p-10 lg:pb-24 overflow-y-auto" data-index="2" data-role="CEO View" style="scrollbar-width: none;">
+                <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                  <div class="absolute bottom-0 right-1/4 w-[300px] lg:w-[500px] h-[300px] lg:h-[500px] bg-[#4A7CFF]/10 rounded-full blur-[100px] lg:blur-[120px]"></div>
+                </div>
+      
+                <div class="relative z-10 h-max lg:h-full flex flex-col gap-6">
+                  <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-4 lg:gap-0">
+                    <div>
+                      <h2 class="text-2xl lg:text-4xl font-extralight text-white tracking-tight leading-none mb-2 lg:mb-3">
+                        Revenue Expansion
+                      </h2>
+                      <p class="text-xs text-white/40 uppercase tracking-widest" style="font-family: 'JetBrains Mono', monospace;">
+                        BACKEND SALES PIPELINE
+                      </p>
+                    </div>
+                    <div class="px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center gap-2 flex-wrap">
+                      <span class="text-xs font-normal text-blue-400">
+                        Total Pipeline:
+                      </span>
+                      <span class="text-sm font-semibold text-white">$142,500</span>
+                    </div>
+                  </div>
+      
+                  <!-- Mobile: horizontal scroll, Desktop: 3-col grid -->
+                  <div class="flex-1 flex overflow-x-auto lg:grid lg:grid-cols-3 gap-4 lg:gap-6 pb-2 lg:pb-0 snap-x snap-mandatory" style="scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.1) transparent;">
+                    
+                    <!-- Column 1 -->
+                    <div class="flex flex-col gap-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] p-3 lg:p-4 min-h-[300px] lg:h-full min-w-[85%] sm:min-w-[50%] lg:min-w-0 snap-center shrink-0">
+                      <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                        <span class="text-xs font-normal text-white/60 uppercase tracking-widest">
+                          Identified
+                        </span>
+                        <span class="text-xs text-white/40 bg-white/5 px-2 py-0.5 rounded" style="font-family: 'JetBrains Mono', monospace;">
+                          6
+                        </span>
+                      </div>
+                      <div class="flex-1 overflow-y-auto pr-1 lg:pr-2 space-y-3" style="scrollbar-width: none;">
+                        <div class="p-3 lg:p-3.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer hover:border-[#4A7CFF]/50 transition-colors">
+                          <div class="flex justify-between items-start mb-2">
+                            <span class="text-sm font-normal text-white">
+                              Alex M.
+                            </span>
+                            <span class="text-xs text-emerald-400" style="font-family: 'JetBrains Mono', monospace;">
+                              Readiness: 92%
+                            </span>
+                          </div>
+                          <p class="text-xs text-white/50 mb-3">
+                            Completed program, HVC Score 8/10.
+                          </p>
+                          <div class="text-xs font-normal text-[#4A7CFF]">
+                            $15k Mastermind
+                          </div>
+                        </div>
+                        <div class="p-3 lg:p-3.5 rounded-xl bg-white/5 border border-white/10 cursor-pointer hover:border-[#4A7CFF]/50 transition-colors">
+                          <div class="flex justify-between items-start mb-2">
+                            <span class="text-sm font-normal text-white">
+                              Jessica R.
+                            </span>
+                            <span class="text-xs text-emerald-400" style="font-family: 'JetBrains Mono', monospace;">
+                              Readiness: 88%
+                            </span>
+                          </div>
+                          <p class="text-xs text-white/50 mb-3">
+                            Month 5, high engagement, HVC Score 7/10.
+                          </p>
+                          <div class="text-xs font-normal text-[#4A7CFF]">
+                            $12k Renewal
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <!-- Column 2 -->
+                    <div class="flex flex-col gap-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] p-3 lg:p-4 min-h-[300px] lg:h-full min-w-[85%] sm:min-w-[50%] lg:min-w-0 snap-center shrink-0 relative">
+                      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#4A7CFF]/50 to-transparent"></div>
+                      <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                        <span class="text-xs font-normal text-white/60 uppercase tracking-widest">
+                          In Conversation
+                        </span>
+                        <span class="text-xs text-[#4A7CFF] bg-[#4A7CFF]/10 border border-[#4A7CFF]/20 px-2 py-0.5 rounded" style="font-family: 'JetBrains Mono', monospace;">
+                          3
+                        </span>
+                      </div>
+                      <div class="flex-1 overflow-y-auto pr-1 lg:pr-2 space-y-3" style="scrollbar-width: none;">
+                        <div class="p-3 lg:p-3.5 rounded-xl bg-gradient-to-b from-[#4A7CFF]/10 to-[#4A7CFF]/5 border border-[#4A7CFF]/30 shadow-[0_0_15px_rgba(74,124,255,0.1)] cursor-pointer">
+                          <div class="flex justify-between items-start mb-2">
+                            <span class="text-sm font-normal text-white">
+                              Thomas B.
+                            </span>
+                            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse mt-1"></span>
+                          </div>
+                          <p class="text-xs text-white/50 mb-3">
+                            Renewal offer sent. Opened 3 times.
+                          </p>
+                          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-0">
+                            <div class="text-xs font-normal text-[#4A7CFF]">
+                              $15k Mastermind
+                            </div>
+                            <span class="text-xs text-white/40">
+                              Follow up today
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <!-- Column 3 -->
+                    <div class="flex flex-col gap-4 rounded-2xl bg-white/[0.02] border border-white/[0.05] p-3 lg:p-4 min-h-[300px] lg:h-full min-w-[85%] sm:min-w-[50%] lg:min-w-0 snap-center shrink-0 relative">
+                      <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
+                      <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                        <span class="text-xs font-normal text-white/60 uppercase tracking-widest">
+                          Closed Won (MTD)
+                        </span>
+                        <span class="text-xs text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2 py-0.5 rounded" style="font-family: 'JetBrains Mono', monospace;">
+                          4
+                        </span>
+                      </div>
+                      <div class="flex-1 overflow-y-auto pr-1 lg:pr-2 space-y-3 opacity-70" style="scrollbar-width: none;">
+                        <div class="p-3 lg:p-3.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20">
+                          <div class="flex justify-between items-start mb-2">
+                            <span class="text-sm font-normal text-white line-through decoration-emerald-500/50">
+                              Sarah K.
+                            </span>
+                            <iconify-icon icon="solar:check-circle-linear" class="text-emerald-400 text-lg"></iconify-icon>
+                          </div>
+                          <div class="text-xs font-normal text-emerald-400 mt-3">
+                            + $24k VIP Package
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Carousel Indicators -->
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-3 lg:gap-4 z-30 bg-black/50 px-3 lg:px-4 py-2 rounded-full border border-white/10 backdrop-blur-md">
+              <div class="showcase-dot w-2 h-2 rounded-full bg-white transition-all shadow-[0_0_8px_rgba(255,255,255,0.8)] pointer-events-auto cursor-pointer"></div>
+              <div class="showcase-dot w-2 h-2 rounded-full bg-white/20 transition-all pointer-events-auto cursor-pointer hover:bg-white/40"></div>
+              <div class="showcase-dot w-2 h-2 rounded-full bg-white/20 transition-all pointer-events-auto cursor-pointer hover:bg-white/40"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capability Stack -->
+        <div class="mt-32 mb-16 lg:mb-20">
+          <h3 class="text-3xl md:text-4xl lg:text-5xl font-manrope font-extralight tracking-tight text-white max-w-4xl">
+            Six layers of intelligence, running on every client, every day.
+          </h3>
+          <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl mt-6">
+            Most client success systems just report data, that's it. They show you what's already happened, but they don't give you any insight on what to do with it. Kairos™ watches what your clients do, decides what should happen next, sends that work to the right person, and gets smarter the longer it runs.
+          </p>
+        </div>
+
+        <div class="flex flex-col border-t border-white/[0.06]">
+
+          <!-- 01 / SEES -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 border-b border-white/[0.06] gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Sees</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">Live signal on every client, at all times.</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl">Kairos™ pulls together the inputs that actually matter: engagement, progress, payments, key touchpoints. No more guessing from scattered check-ins and Stripe exports. You open it and know, in one view, who's thriving, who's drifting, and where the program itself might be failing people.</p>
+            </div>
+          </div>
+
+          <!-- 02 / DECIDES -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 border-b border-white/[0.06] gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Decides</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">Automatically assigns the highest value task.</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl">Kairos™ looks at that signal and identifies the single highest leverage action for each client today, with the reasoning attached. Your team stops asking "who should I focus on?" and starts each day with a short list of prioritized moves grounded in data.</p>
+            </div>
+          </div>
+
+          <!-- 03 / ROUTES -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 border-b border-white/[0.06] gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Routes</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">The right action lands in the right person's hands.</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl">Each role gets its own Today queue, sorted by leverage. Big conversations and program fixes go to the Founder. Re-engagement and support go to the CSMs. System hygiene goes to the operator. This eliminates endless Slack messages, useless meetings, and disorganized spreadsheets keeping you from making more money.</p>
+            </div>
+          </div>
+
+          <!-- 04 / SEQUENCES -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 border-b border-white/[0.06] gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Sequences</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">One continuous lifecycle in a single system.</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl">Onboarding, delivery, and backend sales all run on one pipeline. Kairos™ knows where each client is in their journey and what's going to drive them to a case study and upsell the quickest. Nothing slips through the cracks, enabling your team to turn their brain off and do what the system tells them to do to make you the most cash.</p>
+            </div>
+          </div>
+
+          <!-- 05 / COMPOUNDS -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 border-b border-white/[0.06] gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Compounds</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">Client wins become growth assets by default.</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl">When a client gets a win, most teams say "that's awesome!" and move on. Kairos™ turns that moment into money making moves: the renewal, the referral, the testimonial, the case study. The same work that delivers results is what drives more demand and more revenue.</p>
+            </div>
+          </div>
+
+          <!-- 06 / LEARNS -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Learns</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">The system gets smarter the longer it runs.</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl">Kairos™ runs a quarterly analysis of all the data that's been produced inside of the system. It then learns what worked and what didn't and automatically adjusts the system to maximize the amount of revenue your client success department produces. Keeping your business up to date.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MONEY MODEL -->
+    <section class="w-full bg-[#050505] pt-20 pb-20" id="money-model">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-10 max-w-3xl">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-manrope font-extralight text-white tracking-tight">
+            What one fully leveraged client is actually worth.
+          </h2>
+          <p class="text-sm md:text-base font-inter font-extralight text-white/50 leading-relaxed mt-4">
+            Most coaching businesses stop at the first sale. The ones that scale to 8-9 figures turn normal customers into high value clients instead of constantly chasing new ones.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-stretch text-sm font-inter font-extralight text-white/70">
+          <div class="md:col-span-1 p-5 rounded-2xl border border-white/10 bg-white/[0.02]">
+            <span class="text-xs uppercase tracking-[0.2em] text-white/40 block mb-2">Front End</span>
+            <div class="text-2xl font-manrope font-extralight text-white mb-1">$5,000</div>
+            <p class="text-xs text-white/45">Initial program sale. Where most coaches stop.</p>
+          </div>
+
+          <div class="md:col-span-1 p-5 rounded-2xl border border-white/10 bg-white/[0.02]">
+            <span class="text-xs uppercase tracking-[0.2em] text-white/40 block mb-2">Renewal</span>
+            <div class="text-2xl font-manrope font-extralight text-white mb-1">$5,000</div>
+            <p class="text-xs text-white/45">3 more months of glorious profit from a client you already paid to acquire.</p>
+          </div>
+
+          <div class="md:col-span-1 p-5 rounded-2xl border border-white/10 bg-white/[0.02]">
+            <span class="text-xs uppercase tracking-[0.2em] text-white/40 block mb-2">Referrals</span>
+            <div class="text-2xl font-manrope font-extralight text-white mb-1">$25,000</div>
+            <p class="text-xs text-white/45">5 referred clients at $5,000 each. $0 extra ad spend.</p>
+          </div>
+
+          <div class="md:col-span-1 p-5 rounded-2xl border border-white/10 bg-white/[0.02]">
+            <span class="text-xs uppercase tracking-[0.2em] text-white/40 block mb-2">Ascension</span>
+            <div class="text-2xl font-manrope font-extralight text-white mb-1">$25,000</div>
+            <p class="text-xs text-white/45">They join your backend offer once they've converted to a case study in the core program.</p>
+          </div>
+
+          <div class="md:col-span-1 p-5 rounded-2xl border border-[#4A7CFF]/40 bg-[#4A7CFF]/5 flex flex-col justify-between shadow-[0_0_20px_rgba(74,124,255,0.15),0_0_40px_rgba(74,124,255,0.05)]">
+            <div>
+              <span class="text-xs uppercase tracking-[0.2em] text-[#4A7CFF] block mb-2">Total</span>
+              <div class="text-3xl font-manrope font-extralight text-white mb-2" style="text-shadow: 0 0 4px #4A7CFF, 0 0 8px #4A7CFF, 0 0 16px rgba(74, 124, 255, 0.6);">$60,000</div>
+              <p class="text-xs text-blue-200/80">
+                You'd need 12 front-end clients at $5K to equal what <strong>one fully leveraged client</strong> can do on the backend.
+              </p>
+            </div>
+            <p class="text-[11px] text-blue-200/70 mt-4">
+              The most successful coaching companies <strong>scale with the clients they already have</strong>.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 02: PROOF & RESULTS -->
+    <section class="w-full z-10 relative bg-[#050505]" id="proof">
+      <div class="w-full max-w-7xl mx-auto px-6 py-24 md:py-32 relative z-10">
+          <!-- Header -->
+          <div class="flex flex-col mb-16 md:mb-24">
+            <h2 class="text-5xl md:text-6xl lg:text-7xl font-manrope font-extralight text-white tracking-tight">
+              Case Studies
+            </h2>
+          </div>
+    
+          <!-- Featured Case Studies (Editorial Rows) -->
+          <div class="flex flex-col border-t border-white/[0.06] mb-32">
+            <!-- Row 1: Learn To Cut (Updated with Image) -->
+            <div class="group flex flex-col lg:flex-row w-full py-10 lg:py-12 border-b border-white/[0.06] hover:bg-white/[0.02] transition-colors duration-500 gap-8 lg:gap-16 px-4 lg:px-6 -mx-4 lg:-mx-6">
+              <!-- Photo Zone -->
+              <div class="w-full sm:w-2/3 lg:w-[280px] shrink-0">
+                <div class="w-full aspect-[4/5] lg:aspect-square rounded-2xl bg-[#0A0A0B] border border-white/5 flex items-center justify-center overflow-hidden transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:border-white/10">
+                  <img src="images/alexi-michael.webp" alt="Alexi Michael" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+              </div>
+    
+              <!-- Identity Zone -->
+              <div class="w-full lg:w-[28%] flex flex-col justify-center shrink-0">
+                <h3 class="font-manrope font-normal text-2xl lg:text-3xl text-white tracking-normal mb-6">
+                  Alexi Michael
+                </h3>
+    
+                <a href="https://youtu.be/8DfYWEdHTx4" target="_blank" class="font-inter font-normal text-sm text-[#4A7CFF] uppercase tracking-widest flex items-center gap-2 group/link mt-auto w-max">
+                  View Case Study
+                  <iconify-icon icon="solar:arrow-right-linear" stroke-width="1.5" class="text-sm group-hover/link:translate-x-1.5 transition-transform duration-300"></iconify-icon>
+                </a>
+              </div>
+    
+              <!-- Metric Zone -->
+              <div class="w-full lg:w-auto flex-1 flex flex-col justify-center">
+                <h4 class="font-manrope font-extralight text-2xl lg:text-3xl text-white leading-snug tracking-tight mb-8 lg:mb-12 max-w-xl">
+                  2x monthly revenue from $200K to $400K in 90 days while cutting churn by 64%.
+                </h4>
+    
+                <div class="flex flex-wrap items-end gap-x-12 gap-y-8">
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      +1,566%
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Client Success
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      $2.9M
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Backend Pipeline
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      0%
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Refund Rate
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Row 2: Austin Dunham -->
+            <div class="group flex flex-col lg:flex-row w-full py-10 lg:py-12 border-b border-white/[0.06] hover:bg-white/[0.02] transition-colors duration-500 gap-8 lg:gap-16 px-4 lg:px-6 -mx-4 lg:-mx-6">
+              <div class="w-full sm:w-2/3 lg:w-[280px] shrink-0">
+                <div class="w-full aspect-[4/5] lg:aspect-square rounded-2xl bg-[#0A0A0B] border border-white/5 flex items-center justify-center overflow-hidden transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:border-white/10">
+                  <img src="images/austin-dunham.webp" alt="Austin Dunham" class="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+              </div>
+    
+              <div class="w-full lg:w-[28%] flex flex-col justify-center shrink-0">
+                <h3 class="font-manrope font-normal text-2xl lg:text-3xl text-white tracking-normal mb-6">
+                  Austin Dunham
+                </h3>
+    
+                <a href="https://youtu.be/tYDwXAEMMmE" target="_blank" class="font-inter font-normal text-sm text-[#4A7CFF] uppercase tracking-widest flex items-center gap-2 group/link mt-auto w-max">
+                  View Case Study
+                  <iconify-icon icon="solar:arrow-right-linear" stroke-width="1.5" class="text-sm group-hover/link:translate-x-1.5 transition-transform duration-300"></iconify-icon>
+                </a>
+              </div>
+    
+              <div class="w-full lg:w-auto flex-1 flex flex-col justify-center">
+                <h4 class="font-manrope font-extralight text-2xl lg:text-3xl text-white leading-snug tracking-tight mb-8 lg:mb-12 max-w-xl">
+                  From negative profit to his first $100K month.
+                </h4>
+    
+                <div class="flex flex-wrap items-end gap-x-12 gap-y-8">
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      $100K
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Record Month
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      20x+
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      First-Year ROI
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      2x
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      LTV Increase
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Row 3: Dylan Gigliotti -->
+            <div class="group flex flex-col lg:flex-row w-full py-10 lg:py-12 border-b border-white/[0.06] hover:bg-white/[0.02] transition-colors duration-500 gap-8 lg:gap-16 px-4 lg:px-6 -mx-4 lg:-mx-6">
+              <div class="w-full sm:w-2/3 lg:w-[280px] shrink-0">
+                <div class="w-full aspect-[4/5] lg:aspect-square rounded-2xl bg-[#0A0A0B] border border-white/5 flex items-center justify-center overflow-hidden transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:border-white/10">
+                  <img src="images/dylan-gigliotti.webp" alt="Dylan Gigliotti" class="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+              </div>
+    
+              <div class="w-full lg:w-[28%] flex flex-col justify-center shrink-0">
+                <h3 class="font-manrope font-normal text-2xl lg:text-3xl text-white tracking-normal mb-6">
+                  Dylan Gigliotti
+                </h3>
+    
+                <a href="https://youtu.be/HSQ5wIz3eu4" target="_blank" class="font-inter font-normal text-sm text-[#4A7CFF] uppercase tracking-widest flex items-center gap-2 group/link mt-auto w-max">
+                  View Case Study
+                  <iconify-icon icon="solar:arrow-right-linear" stroke-width="1.5" class="text-sm group-hover/link:translate-x-1.5 transition-transform duration-300"></iconify-icon>
+                </a>
+              </div>
+    
+              <div class="w-full lg:w-auto flex-1 flex flex-col justify-center">
+                <h4 class="font-manrope font-extralight text-2xl lg:text-3xl text-white leading-snug tracking-tight mb-8 lg:mb-12 max-w-xl">
+                  $15K/month to $97K cash collected in 3 weeks.
+                </h4>
+    
+                <div class="flex flex-wrap items-end gap-x-12 gap-y-8">
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      $130K
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      AR Unlocked
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      5x
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Client Capacity
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      3 Day
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Work Week
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Row 4: Jessica Lawson -->
+            <div class="group flex flex-col lg:flex-row w-full py-10 lg:py-12 border-b border-white/[0.06] hover:bg-white/[0.02] transition-colors duration-500 gap-8 lg:gap-16 px-4 lg:px-6 -mx-4 lg:-mx-6">
+              <div class="w-full sm:w-2/3 lg:w-[280px] shrink-0">
+                <div class="w-full aspect-[4/5] lg:aspect-square rounded-2xl bg-[#0A0A0B] border border-white/5 flex items-center justify-center overflow-hidden transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:border-white/10">
+                  <img src="images/jessica-lawson.webp" alt="Jessica Lawson" class="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+              </div>
+    
+              <div class="w-full lg:w-[28%] flex flex-col justify-center shrink-0">
+                <h3 class="font-manrope font-normal text-2xl lg:text-3xl text-white tracking-normal mb-6">
+                  Jessica Lawson
+                </h3>
+    
+                <a href="https://youtu.be/Ky77l_PGpyA" target="_blank" class="font-inter font-normal text-sm text-[#4A7CFF] uppercase tracking-widest flex items-center gap-2 group/link mt-auto w-max">
+                  View Case Study
+                  <iconify-icon icon="solar:arrow-right-linear" stroke-width="1.5" class="text-sm group-hover/link:translate-x-1.5 transition-transform duration-300"></iconify-icon>
+                </a>
+              </div>
+    
+              <div class="w-full lg:w-auto flex-1 flex flex-col justify-center">
+                <h4 class="font-manrope font-extralight text-2xl lg:text-3xl text-white leading-snug tracking-tight mb-8 lg:mb-12 max-w-xl">
+                  $3K/month to $30K consistently.
+                </h4>
+    
+                <div class="flex flex-wrap items-end gap-x-12 gap-y-8">
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      10x
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Monthly Revenue
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      12 Views
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Outperformed 260K Followers
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      $0
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Ad Spend
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Row 5: Corbin Felts -->
+            <div class="group flex flex-col lg:flex-row w-full py-10 lg:py-12 border-b border-white/[0.06] hover:bg-white/[0.02] transition-colors duration-500 gap-8 lg:gap-16 px-4 lg:px-6 -mx-4 lg:-mx-6">
+              <div class="w-full sm:w-2/3 lg:w-[280px] shrink-0">
+                <div class="w-full aspect-[4/5] lg:aspect-square rounded-2xl bg-[#0A0A0B] border border-white/5 flex items-center justify-center overflow-hidden transition-transform duration-700 ease-out group-hover:scale-[1.02] group-hover:border-white/10">
+                  <img src="images/corbin-felts.webp" alt="Corbin Felts" class="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+              </div>
+    
+              <div class="w-full lg:w-[28%] flex flex-col justify-center shrink-0">
+                <h3 class="font-manrope font-normal text-2xl lg:text-3xl text-white tracking-normal mb-6">
+                  Corbin Felts
+                </h3>
+    
+                <a href="https://youtu.be/C49GTiTYw38" target="_blank" class="font-inter font-normal text-sm text-[#4A7CFF] uppercase tracking-widest flex items-center gap-2 group/link mt-auto w-max">
+                  View Case Study
+                  <iconify-icon icon="solar:arrow-right-linear" stroke-width="1.5" class="text-sm group-hover/link:translate-x-1.5 transition-transform duration-300"></iconify-icon>
+                </a>
+              </div>
+    
+              <div class="w-full lg:w-auto flex-1 flex flex-col justify-center">
+                <h4 class="font-manrope font-extralight text-2xl lg:text-3xl text-white leading-snug tracking-tight mb-8 lg:mb-12 max-w-xl">
+                  $5K/month to consistent $50K months.
+                </h4>
+    
+                <div class="flex flex-wrap items-end gap-x-12 gap-y-8">
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      $140K
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Cash Collected
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      18x
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      ROI
+                    </span>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <span class="font-manrope font-extralight text-4xl lg:text-5xl text-white tracking-tight leading-none">
+                      $50K
+                    </span>
+                    <span class="font-inter text-sm text-white/40 uppercase tracking-widest mt-1">
+                      Record Month
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+
+          </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: METHOD -->
+    <section class="w-full z-10 border-white/5 border-t pt-32 pb-32 relative" id="method">
+
+      <div class="max-w-7xl mx-auto px-6 relative">
+
+        <!-- Section Header -->
+        <div class="mb-16">
+          <h2 class="text-5xl md:text-6xl lg:text-7xl font-manrope font-extralight tracking-tight text-white">
+            How we turn client success into profit
+          </h2>
+        </div>
+
+        <!-- Governing Principle -->
+        <div class="max-w-3xl mb-24 pl-0">
+          <p class="text-base font-inter font-extralight text-white/60 leading-relaxed mb-3">
+            Coaching is behavior change. The primary mechanism of behavior change is the environment. Not motivation, discipline, or accountability.
+          </p>
+          <p class="text-base font-inter font-extralight text-white/45 leading-relaxed mb-3">
+            When clients don't do the work, it's because the program made doing the right thing the exception and the wrong thing the default option of the program.
+          </p>
+          <p class="text-base font-inter font-extralight text-white/45 leading-relaxed">
+            Our method engineers the highest value client experience where the default path results in clients actually doing the work, continuing to work with you, buying again, and referring their friends to the program.
+          </p>
+        </div>
+
+        <!-- Five Phases -->
+        <div class="flex flex-col border-t border-white/[0.06]">
+
+          <!-- Phase 1: Audit -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 border-b border-white/[0.06] gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Phase 1</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">Audit</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl mb-4">We critically analyze every component of your business to determine who your highest value clients actually are, what the true constraint is for each area of your business, and set the foundations for your custom tailored solutions.</p>
+            </div>
+          </div>
+
+          <!-- Phase 2: Design the Highest Value Client Experience -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 border-b border-white/[0.06] gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Phase 2</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">Design the highest value client experience</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl mb-4">Engineer the highest value client experience that minimizes time-to-value and maximizes lifetime value, making results, referrals, and backend sales inevitable. This includes designing and building a world class onboarding experience that sets clear expectations, eliminates buyer's remorse, and gets clients to ROI as fast as possible.</p>
+            </div>
+          </div>
+
+          <!-- Phase 3: Install Kairos -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 border-b border-white/[0.06] gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Phase 3</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">Install Kairos™</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl mb-4">A combination of milestone and time-based pipelines that move clients through your program automatically, monitor their progress, identify at-risk clients before they become a problem, and drive conversion opportunities for backend sales. Eliminates the guesswork for your CS team with automated task assignment based on where clients are and what they need.</p>
+            </div>
+          </div>
+
+          <!-- Phase 4: Client Success Training -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 border-b border-white/[0.06] gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Phase 4</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">Client success training</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl mb-4">Train your team to deliver transformational coaching that gets clients to confront what they're avoiding and do the work without hand-holding. Battle tested systems that have handled every niche and the largest client load in the entire info-product industry. Elite group call methods that deliver 1:1 level value at scale, without hiring and managing a large CS team.</p>
+            </div>
+          </div>
+
+          <!-- Phase 5: Backend Revenue Architecture -->
+          <div class="flex flex-col lg:flex-row w-full py-10 lg:py-14 gap-8 lg:gap-16">
+            <div class="w-full lg:w-[160px] shrink-0">
+              <span class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60" style="font-family: 'JetBrains Mono', monospace;">Phase 5</span>
+            </div>
+            <div class="w-full lg:flex-1">
+              <h4 class="text-xl lg:text-2xl font-manrope font-extralight text-white tracking-tight leading-snug mb-3">Backend revenue architecture</h4>
+              <p class="text-sm font-inter font-extralight text-white/40 leading-relaxed max-w-2xl mb-4">Implement the systematic path that turns one-time buyers into lifelong clients worth 10x their initial purchase. Renewals, cross sells, down sells, upsells, masterminds, and other offers that only become sustainably possible after clients get results from your core program.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="w-full bg-[#050505] pt-32 pb-32 relative" id="testimonials">
+      <div class="w-full max-w-7xl mx-auto px-6">
+          <!-- Proof Wall (Compact Video Grid) -->
+          <div>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-manrope font-extralight text-white tracking-tight mb-12">
+              Hear from our clients
+            </h2>
+    
+    
+            <!-- Video Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+              <!-- 1. Zak Blake -->
+              <a href="https://youtu.be/MaB5I2XeeHU" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/MaB5I2XeeHU/maxresdefault.jpg" alt="Zak Blake" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Zak Blake</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">Founder, Reverse Scaling</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"We've worked with 50 to 60 coaches. I still haven't seen another service that helps coaching businesses as systemically as Alex's."</p>
+                </div>
+              </a>
+
+              <!-- 2. Jordan Armstrong -->
+              <a href="https://youtube.com/shorts/op_wI3s_fo4" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/op_wI3s_fo4/hqdefault.jpg" alt="Jordan Armstrong" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Jordan Armstrong</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">Founder, Impact Ops</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"The client acquisition flywheel hinges on the client success department. Bringing Alex into our accounts was the only way I could guarantee that would be a 10 out of 10."</p>
+                </div>
+              </a>
+
+              <!-- 3. Don -->
+              <a href="https://youtu.be/OwJwYrjmUwQ" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/OwJwYrjmUwQ/maxresdefault.jpg" alt="Don" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Don</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">Systems Developer, Founder OS</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"I've built systems for Eli Wilde, Chase Hughes, and Matt Gray at FounderOS. Alex's was, without question, the easiest implementation I've ever done."</p>
+                </div>
+              </a>
+
+              <!-- 4. Nick Morrison -->
+              <a href="https://youtu.be/0OdoBLqIClk" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/0OdoBLqIClk/maxresdefault.jpg" alt="Nick Morrison" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Nick Morrison</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">Founder</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"Alex built the team, led the coaching, and ran the community. We went from 1,100 members to over 10,000 in about two weeks."</p>
+                </div>
+              </a>
+
+              <!-- 5. Jack Sicker -->
+              <a href="https://youtube.com/shorts/FxN1M8g67-o" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/FxN1M8g67-o/maxresdefault.jpg" alt="Jack Sicker" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Jack Sicker</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">Founder</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"We lost $60K before working with Alex. 30 days later we made $172K from a new funnel. It turned out that client success was the foundation for everything on the front end."</p>
+                </div>
+              </a>
+
+              <!-- 6. Jacob Lee -->
+              <a href="https://youtube.com/shorts/vnenqMcn5tU" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/vnenqMcn5tU/maxresdefault.jpg" alt="Jacob Lee" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Jacob Lee</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">Founder</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"Our backend revenue tripled from 8% to 25%+ and hit our record month."</p>
+                </div>
+              </a>
+
+              <!-- 7. Barret Vickery -->
+              <a href="https://youtu.be/sIprg3lSh8A" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/sIprg3lSh8A/maxresdefault.jpg" alt="Barret Vickery" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Barret Vickery</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">CSM, Founder OS</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"I spent eight years in CS at VC-backed startups. The systems Alex built for our team were invaluable."</p>
+                </div>
+              </a>
+
+              <!-- 8. John Lloyd -->
+              <a href="https://youtu.be/ZFb6hKno5as" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/ZFb6hKno5as/maxresdefault.jpg" alt="John Lloyd" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">John Lloyd</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">CSM, Learn To Cut</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"In four months, we fixed something I'd been trying to solve for more than 10 years."</p>
+                </div>
+              </a>
+
+              <!-- 9. Erwin Cronk -->
+              <a href="https://youtu.be/vf_mfuzyjsU" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/vf_mfuzyjsU/maxresdefault.jpg" alt="Erwin Cronk" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Erwin Cronk</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">CSM, Founder OS</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"I've worked alongside Alex in two organizations. I went from lost to coaching clients through frameworks that get them the best results in the shortest time."</p>
+                </div>
+              </a>
+
+              <!-- 10. Dawson Turkovich -->
+              <a href="https://youtu.be/GAOaohXf1AU" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/GAOaohXf1AU/maxresdefault.jpg" alt="Dawson Turkovich" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Dawson Turkovich</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">Client Success Director, Learn To Cut</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"People are asking to buy more before they're even done with the program."</p>
+                </div>
+              </a>
+
+              <!-- 11. Lee Litvin -->
+              <a href="https://youtube.com/shorts/uVdcywm2F2U" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/uVdcywm2F2U/maxresdefault.jpg" alt="Lee Litvin" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Lee Litvin</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">Founder, Rapid Fire Music Academy</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"I was staying up late at night wondering if my clients were having a good experience. Now I can actually work on the business instead of in it."</p>
+                </div>
+              </a>
+
+              <!-- 12. Zach Rana -->
+              <a href="https://www.youtube.com/watch?v=Az2cHG6JhkM" target="_blank" class="flex flex-col group cursor-pointer">
+                <div class="w-full aspect-video rounded-xl bg-[#0A0A0B] border border-white/5 relative overflow-hidden mb-4 transition-all duration-500 group-hover:border-white/10">
+                  <img src="https://img.youtube.com/vi/Az2cHG6JhkM/maxresdefault.jpg" alt="Zach Rana" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-black/40 text-white/80 group-hover:border-white/30 group-hover:scale-110 group-hover:bg-black/60 transition-all duration-500 backdrop-blur-sm shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                      <iconify-icon icon="solar:play-bold" class="text-xl translate-x-0.5"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-1 px-1">
+                  <span class="font-inter font-normal text-base text-white tracking-normal">Zach Rana</span>
+                  <span class="font-inter font-light text-xs text-white/50 uppercase tracking-widest">Founder</span>
+                  <p class="font-inter font-extralight text-sm text-white/40 mt-2 leading-relaxed">"I'm on pace to double or maybe even triple our record month because I had the time to actually focus on the right problem the business needed."</p>
+                </div>
+              </a>
+            </div>
+      </div>
+    </section>
+    <section class="w-full bg-[#050505] pt-32 pb-32 relative" id="about">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-20">
+
+          <!-- Photo -->
+          <div class="w-full lg:w-[45%] shrink-0">
+            <div class="rounded-2xl overflow-hidden border border-white/5">
+              <img src="images/alex-kerr.webp" alt="Alex Kerr" class="w-full h-auto object-cover">
+            </div>
+          </div>
+
+          <!-- Bio -->
+          <div class="w-full lg:flex-1 flex flex-col justify-center">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-manrope font-extralight tracking-tight text-white mb-4">
+              Alex Kerr
+            </h2>
+            <p class="text-sm font-inter uppercase tracking-[0.3em] text-[#4A7CFF]/60 mb-10">Founder, Success By Default</p>
+
+            <div class="space-y-6 text-sm font-inter font-extralight text-white/45 leading-relaxed max-w-xl">
+              <p>
+                For the last 5 years, I've been the guy behind the scenes helping some of the largest 7, 8, and 9 figure coaching businesses fix their most challenging client success problems.
+              </p>
+              <p>
+                I used to be the Head of Client Success for the fastest growing and largest coaching company in the world, doing over $500,000 per day. I was responsible for helping scale and manage $13.5M worth of clients acquired over just a 2 month period, across a base of over 6,000 active clients.
+              </p>
+              <p>
+                This created the largest fulfillment bottleneck that the coaching industry has ever seen and it was my job to fix it, and I did.
+              </p>
+              <p>
+                I personally ran over 1,000 1:1 coaching calls in under a year, led weekly group calls with 150-500 people at a time, and built, trained, and managed a team of 13 coaches to deliver results and drive backend sales at a 9 figure level.
+              </p>
+              <p>
+                I took everything that I learned from that experience and created one of the only Client Success agencies in the high ticket space.
+              </p>
+              <p>
+                And over the past 5 years of working exclusively with 7 and 8 figure coaching programs, I was able to scale my company to $155k/month at a 92% close rate with none of the things that everyone says is required to make that happen.
+              </p>
+              <p>
+                I didn't have a funnel, VSL, email list, or website. I never ran ads, I had less than 1,000 followers, and I barely posted any content at all.
+              </p>
+              <p>How?</p>
+              <p>
+                I had full access to the backend of the biggest coaching businesses in the world, so I know firsthand what actually scales and what doesn't.
+              </p>
+              <p>
+                And this is exactly what allowed our clients to get the results you see on this page.
+              </p>
+              <p class="mt-4">
+                If you've gotten this far, it would be an honor to have you become the next success story in our community. You know what to do, the link is down below. Let's make it happen.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="w-full bg-[#050505] pb-32 pt-12 relative">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h3 class="text-2xl md:text-3xl font-manrope font-extralight text-white mb-4">
+          Scale with the clients you already have
+        </h3>
+        <p class="text-sm md:text-base font-inter font-extralight text-white/45 mb-10 leading-relaxed">
+          It's time to break the cycle and get off the revenue rollercoaster once and for all.
+        </p>
+
+        <div class="flex justify-center">
+          <div class="relative group">
+            <div class="absolute -inset-1 bg-[#4A7CFF] rounded-full blur-lg opacity-40 group-hover:opacity-100 transition duration-500"></div>
+            <a href="https://successbydefault.typeform.com/to/rfyKaQod" target="_blank" class="relative flex items-center justify-center px-12 py-5 rounded-full bg-gradient-to-b from-[#0A0A0A] to-[#111] border border-[#4A7CFF]/50 text-white text-sm font-medium uppercase tracking-[0.15em] hover:scale-[1.02] transition-transform duration-300 shadow-[inset_0_2px_10px_rgba(255,255,255,0.1)]">
+              Get The System
+              <iconify-icon icon="solar:arrow-right-linear" stroke-width="2" class="text-[#4A7CFF] ml-3 text-lg"></iconify-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-white/5 bg-[#050505] py-10 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col items-center gap-4 text-xs text-white/40 font-mono tracking-widest uppercase text-center">
+        <div>
+          © 2026 Success By Default · Client Success Solutions LLC. All rights reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://www.youtube.com/@SuccessByDefault" target="_blank" class="hover:text-white transition-colors">YouTube</a>
+          <a href="https://www.instagram.com/alexwkerr" target="_blank" class="hover:text-white transition-colors">Instagram</a>
+          <span class="text-white/20">·</span>
+          <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
+          <a href="/disclaimer" class="hover:text-white transition-colors">Disclaimer</a>
+        </div>
+      </div>
+    </footer>
+  
+</body></html>
